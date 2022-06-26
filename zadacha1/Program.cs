@@ -10,7 +10,6 @@ namespace HelloWorld
             int number1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите второе число: ");
             int number2 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Это ");
             if(number1 < number2 ) 
             {
                 Console.WriteLine($"Большое число:{number2}");
@@ -20,6 +19,10 @@ namespace HelloWorld
             {
                 Console.WriteLine($"Большое число:{number1}");
                 Console.WriteLine($"Меньшее число:{number2}");
+            }
+            if (number1 == number2)
+            {
+                Console.WriteLine($"Они равны");
             }   
         }
     }
